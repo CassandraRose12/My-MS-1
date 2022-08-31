@@ -6,15 +6,17 @@ body {
     background-position: bottom;
 }
 img {
-    width: 100px;
+    width: 250px;
     position: absolute;
 }
 #b1{
-    left: 0;
+    right: 30%;
     transform: scaleX(-1);
+    animation-name: b1;
+    animation-duration: 6s;
 }
 #b2{
-    left: 10%;
+    left: 20%;
     transform: scaleX(-1);
 }
 #b3{
@@ -22,9 +24,16 @@ img {
     transform: scaleX(-1);
 }
 #b4{
-    left: 70%;
+    right: 70%;
 }
 #b5{
-    left: 30%;
+    left: 80%;
 }
 
+@keyframes b1 {
+   10% {left: 20%; bottom: 30%;} 
+   30% {left: 30%; bottom: 50%;} 
+   50% {left: 40%; bottom: 70%;} 
+   70% {left: 60%; bottom: 30%;} 
+   100% {left: 100%; bottom: 100%;} 
+}
