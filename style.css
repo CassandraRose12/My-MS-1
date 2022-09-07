@@ -7,72 +7,78 @@ body {
     background-position: bottom;
 }
 /*add duck photos*/
-img {
+img{
     width: 250px;
     position: absolute;
+    top: auto;
+    animation-fill-mode: forwards;
 }
 /*create seperate image files for each duck*/
 #b1{
-    right: 30%;
+    right: 40%;
     transform: scaleX(-1);
     animation-name: b1;
-    animation-duration: 6s;
+    animation-duration: 5s;
+
 }
 #b2{
-    left: 20%;
+    left: 80%;
     transform: scaleX(-1);
     animation-name: b2;
-    animation-duration: 6s;
+    animation-duration: 8s;
 }
 #b3{
     left: 50%;
     transform: scaleX(-1);
     animation-name: b3;
-    animation-duration: 6s;
+    animation-duration: 4s;
+   
 }
 #b4{
     right: 70%;
     animation-name: b4;
     animation-duration: 6s;
+    animation-direction: reverse;
 }
 #b5{
     left: 80%;
     animation-name: b5;
-    animation-duration: 6s;
+    animation-duration: 5s;
+    animation-direction: reverse;
 }
 /*animate birds*/ 
 @keyframes b1 {
-   10% {left: 20%; bottom: 30%;} 
-   30% {left: 30%; bottom: 50%;} 
-   50% {left: 40%; bottom: 70%;} 
-   70% {left: 60%; bottom: 30%;} 
+   0% {left: 25%; bottom: 40%;} 
+   20% {left: 30%; bottom: 50%;} 
+   60% {left: 40%; bottom: 70%;} 
+   80% {left: 90%; bottom: 30%;} 
    100% {left: 100%; bottom: 100%;} 
 }
 @keyframes b2 {
-    10% {left: 0%; bottom: 40%;} 
-    30% {left: 20%; bottom: 50%;} 
-    50% {left: 40%; bottom: 60%;} 
-    70% {left: 60%; bottom: 40%;} 
-    100% {left: 100%; bottom: 100%;} 
+    0% {left: 70%; bottom: 30%;} 
+    20% {left: 70%; bottom: 55%;} 
+    50% {left: 80%; bottom: 90%;} 
+    70% {left: 90%; bottom: 40%;} 
+    100% {left: 100%; bottom: 20%;} 
  }
  @keyframes b3 {
-    10% {left: 20%; bottom: 30%;} 
-    30% {left: 30%; bottom: 50%;} 
-    50% {left: 40%; bottom: 70%;} 
+    10% {left: 15%; bottom: 70%;} 
+    30% {left: 40%; bottom: 60%;} 
+    50% {left: 50%; bottom: 75%;} 
     70% {left: 60%; bottom: 30%;} 
     100% {left: 100%; bottom: 100%;} 
  }
  @keyframes b4 {
-    10% {left: 20%; bottom: 30%;} 
+    0% {left: 20%; bottom: 45%;} 
     30% {left: 30%; bottom: 50%;} 
-    50% {left: 40%; bottom: 70%;} 
-    70% {left: 60%; bottom: 30%;} 
-    100% {left: 100%; bottom: 100%;} 
+    50% {left: 45%; bottom: 80%;} 
+    80% {left: 68%; bottom: 70%;} 
+    100% {left: 100%; bottom: 50%;} 
  }
  @keyframes b5 {
-    10% {left: 20%; bottom: 30%;} 
-    30% {left: 30%; bottom: 50%;} 
-    50% {left: 40%; bottom: 70%;} 
-    70% {left: 60%; bottom: 30%;} 
+    10% {left: 0%; bottom: 90%;} 
+    30% {left: 20%; bottom: 50%;} 
+    50% {left: 25%; bottom: 60%;} 
+    70% {left: 65%; bottom: 75%;} 
     100% {left: 100%; bottom: 100%;} 
  }
